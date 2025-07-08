@@ -3,7 +3,7 @@ This simple C# class brings back that classic keypad phone experience, letting y
 
 ## Description
 
-This handy utility gives you a single `OldPhoneKeyPad()` method that does all the heavy lifting. Just feed it a string of key presses, and it'll decode it into a readable message. It works just like you remember, handling everything from cycling through letters on a key to dealing with pauses and backspaces.
+This handy utility gives you a single `OldPhonePad()` method that does all the heavy lifting. Just feed it a string of key presses, and it'll decode it into a readable message. It works just like you remember, handling everything from cycling through letters on a key to dealing with pauses and backspaces.
 
 ## Prerequisites
 
@@ -29,35 +29,9 @@ Since the entire solution is provided, getting started is straightforward.
 
   3. Build and run the project. The main program is already set up to run the examples and will display the output in your console.
 
-**Here's a quick example:**
+## Testing
 
-```csharp
-using System;
+This project has been tested against a comprehensive suite of scenarios to ensure its accuracy.
 
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        // Example 1: CAB
-         string input1 = "222 2 22#";
-        string output1 = OldPhoneKeyPadConverter.OldPhoneKeyPad(input1);
-        Console.WriteLine($"OldPhonePad(\"{input1}\") -> Output: \"{output1}\"");
-
-        // Example 2: E
-        string input2 = "33#";
-        string output2 = OldPhoneKeyPadConverter.OldPhoneKeyPad(input2);
-        Console.WriteLine($"OldPhonePad(\"{input2}\") -> Output: \"{output2}\"");
-    
-        // Example 3: B
-        string input3 = "227*#";
-        string output3 = OldPhoneKeyPadConverter.OldPhoneKeyPad(input3);
-        Console.WriteLine($"OldPhonePad(\"{input3}\") -> Output: \"{output3}\"");
-        
-    }
-}
-
-// Expected Output:
-// OldPhonePad("222 2 22#") -> Output: "CAB"
-// OldPhonePad("33#") -> Output: "E"
-// OldPhonePad("227*#") -> Output: "B"
+For a detailed list of all test cases, please see the Test Cases.docx (docs/Test Cases.docx).
 
