@@ -25,7 +25,7 @@ public static class OldPhoneKeyPadConverter
     /// </summary>
     /// <param name="input">A string representing the sequence of key presses</param>
     /// <returns>The readable string.</returns>
-    public static string OldPhoneKeyPad(string input)
+    public static string OldPhonePad(string input)
     {
         // validation: If the input is null, empty, or doesn't end with '#', return an empty string
         if (string.IsNullOrEmpty(input) || !input.EndsWith("#"))
