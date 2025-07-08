@@ -7,7 +7,7 @@ This handy utility gives you a single `OldPhonePad()` method that does all the h
 
 ## Prerequisites
 
-- .NET 8 or later
+- .NET 8 
 
 ## Features
 
